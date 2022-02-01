@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "668910989273",
+    "project_id": "jetareader-23fb7",
+    "storage_bucket": "jetareader-23fb7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:668910989273:android:db73d7a2b073fd2cc973c8",
+        "android_client_info": {
+          "package_name": "com.osisupermoses.capstoneappreaderapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "668910989273-pu8p8mradvr2bbkn94q8n8pinv89g4r2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDf4Y9OYYS0BYwMcm94LdHP2E0ZdHYcah4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "668910989273-pu8p8mradvr2bbkn94q8n8pinv89g4r2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

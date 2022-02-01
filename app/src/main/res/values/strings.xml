@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Capstone App (Reader App)</string>
+    <string name="create_acct">Please enter a valid email and password that is
+        at least 6 characters </string>
+    <string name="sure">Are you sure you want to delete this book?</string>
+    <string name="action">This action is not reversible</string>
+</resources>

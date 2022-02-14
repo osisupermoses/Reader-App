@@ -158,7 +158,9 @@ fun SearchForm(
 
         InputField(
             modifier = modifier,
-            valueState = searchQueryState, labelId = "Search", enabled = true,
+            valueState = searchQueryState,
+            labelId = "Search",
+            enabled = true,
             onAction = KeyboardActions {
                 if (!valid) return@KeyboardActions
                 onSearch(searchQueryState.value.trim())

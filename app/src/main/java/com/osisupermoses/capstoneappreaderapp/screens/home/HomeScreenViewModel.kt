@@ -28,16 +28,15 @@ class HomeScreenViewModel @Inject constructor(
     private fun getAllBooksFromDatabase() {
         viewModelScope.launch {
             try {
-//            data.value.loading = true
                 data.value = repository.getAllBooksFromDatabase()
-                if (!data.value.data.isNullOrEmpty()) data.value.loading = false
+                if (!data.value.data.isNullOrEmpty())
+                    data.value.loading = false
 
             } catch (ex: FirebaseFirestoreException) {
                 data.value.e = ex
-                print("An unknown error occurred! while getting the file")
+                print("An unknown error occurred while getting the file.")
                 Log.d("Error", "There is an error getting files from database: ${ex.message.toString()}")
             }
         }
-//        Log.d("GET", "Get All Books From Database: ${data.value.data?.toList().toString()}")
     }
 }

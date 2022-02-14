@@ -86,9 +86,9 @@ fun BookUpdateScreen(navController: NavHostController,
                         ShowBookUpdate(bookInfo = viewModel.data.value, bookItemId = bookItemId)
                     }
 
-                    ShowSimpleForm(book = viewModel.data.value.data?.first { mBook ->
+                    viewModel.data.value.data?.firstOrNull { mBook ->
                         mBook.googleBookId == bookItemId
-                    }!!, navController)
+                    }?.let { it -> ShowSimpleForm(book = it, navController) }
                 }
             }
         }
@@ -297,9 +297,9 @@ fun ShowBookUpdate(bookInfo: DataOrException<List<MBook>, Boolean, Exception>,
             Column(modifier = Modifier.padding(4.dp),
                 verticalArrangement = Arrangement.Center) {
 
-                CardListItem(book = bookInfo.data!!.first { mBook ->
+                bookInfo.data!!.firstOrNull { mBook ->
                     mBook.googleBookId == bookItemId
-                })
+                }?.let { CardListItem(book = it) }
             }
         }
     }
@@ -354,6 +354,5 @@ fun CardListItem(book: MBook, onPressDetails: () -> Unit = {}) {
                         bottom = 8.dp))
             }
         }
-
     }
 }

@@ -5,8 +5,8 @@ import com.google.firebase.firestore.Query
 import com.osisupermoses.capstoneappreaderapp.data.DataOrException
 import com.osisupermoses.capstoneappreaderapp.model.MBook
 import kotlinx.coroutines.tasks.await
-import java.lang.Exception
 import javax.inject.Inject
+import kotlin.Exception
 
 class FireRepository @Inject constructor(private val queryBook: Query) {
 
